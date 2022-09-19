@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import ExpenceApp from "./component/ExpenceApp";
 
 function App() {
   return (
     <div className="App">
-      expance tracker
+      <ExpenceApp />
     </div>
   );
 }
