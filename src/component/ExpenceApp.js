@@ -1,17 +1,24 @@
 import { useState } from "react";
+import Transaction from "./Transaction";
 
 const ExpenceApp = () => {
-  const [expance, setExpance] = useState(0);
+  const [expence, setExpence] = useState(0);
   const [income, setIncome] = useState(0);
   const [transaction, setTransaction] = useState([]);
 
   return (
     <>
-      expance tracker
-      <p>Balance:{income - expance}</p>
-      <button>Add</button>
-      <div>expance</div>
-      <div>income</div>
+      <section className="container">
+        <div className="topSection">
+          <p>Balance:{income - expence}</p>
+          <button>Add</button>
+        </div>
+        <div className="resultSection">
+          <div>expance {expence}</div>
+          <div>income {income}</div>
+        </div>
+        <Transaction transaction={transaction} />
+      </section>
     </>
   );
 };

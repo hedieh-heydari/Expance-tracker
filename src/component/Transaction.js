@@ -1,5 +1,7 @@
-const Transaction = () => {
-    return ( <></> );
+const Transaction = ({Transaction}) => {
+    return ( <>
+    transactions
+    </> );
 }
  
 export default Transaction;
