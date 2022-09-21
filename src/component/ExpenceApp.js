@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Overview from "./Overview";
 import Transaction from "./Transaction";
 
 const ExpenceApp = () => {
@@ -9,14 +10,7 @@ const ExpenceApp = () => {
   return (
     <>
       <section className="container">
-        <div className="topSection">
-          <p>Balance:{income - expence}</p>
-          <button>Add</button>
-        </div>
-        <div className="resultSection">
-          <div>expance {expence}</div>
-          <div>income {income}</div>
-        </div>
+        <Overview income={income} expence={expence} />
         <Transaction transaction={transaction} />
       </section>
     </>
